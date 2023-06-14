@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900'
+        rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erica Rocha Imobiliária</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/fav/favicon-16x16.png">
+    <link rel="manifest" href="assets/fav//site.webmanifest">
+    <link rel="mask-icon" href="assets/fav//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div class="header">
+        <img src="assets/logo_white.png" class="logo-white">
+    </div>
+    <div class="nav" id="navArea">
+
+        <a href="#who">QUEM SOMOS</a>
+        <div class="gold-divider"></div>
+        <a href="#launch">EMPREENDIMENTOS</a>
+        <div class="gold-divider"></div>
+        <a href="#history">HISTÓRIA</a>
+        <div class="gold-divider"></div>
+        <a href="#feedback">DEPOIMENTOS</a>
+    </div>
+    <div class="image-slide">
+        <div class="box-input">
+            <h1 class="input-title">Bem Vindo à sua</h1>
+            <h1 class="input-sub">Vida Nova!</h1>
+            <h1 class="input-label">Seu nome:</h1>
+            <input class="input-style" id="name" placeholder="Digite aqui">
+            <h1 class="input-label">Seu E-mail:</h1>
+            <input class="input-style" type="email" id="email" placeholder="seumelhor@email.com">
+            <h1 class="input-label">Seu telefone:</h1>
+            <input class="input-style" type="tel" id="tel" placeholder="(00) 00000-0000">
+            <div class="main-btn" onclick="openZap()">
+                <img src="assets/zap.svg" class="zap-image">
+                <h1 class="main-btn-text">Seja Notificado!</h1>
+            </div>
+        </div>
+        <img src="assets/slide/slide-0.png" class="image-slide-item" id="image-slide-item"></img>
+    </div>
+    <div class="window-actions">
+        <div class="window-actions-item" onclick="changeSlideImage(0)"></div>
+        <div class="window-actions-item" onclick="changeSlideImage(1)"></div>
+        <div class="window-actions-item" onclick="changeSlideImage(2)"></div>
+    </div>
+    <section id="who">
+        <div class="welcome-section">
+            <h1 class="welcome-title">Bem-vindo (a)</h1>
+            <h1 class="welcome-subtitle">à Erica Rocha Negócios Imobiliários!</h1>
+            <h1 class="welcome-text">Somos uma imobiliária dedicada a oferecer a você a melhor experiência no mercado.
+                Nossa
+                equipe apaixonada e altamente qualificada, está pronta para ajudá-lo a encontrar o lar dos seus sonhos
+                ou
+                investimentos promissores.</h1>
+            <h1 class="welcome-text">Nossa missão é proporcionar um serviço excepcional, baseado em integridade,
+                transparência e profissionalismo. Sabemos que a compra, venda ou aluguel de imóveis é uma decisão
+                significativa na vida de nossos clientes, por isso estamos aqui para tornar essa jornada fácil e
+                gratificante.</h1>
+        </div>
+    </section>
+    <section id="launch">
+        <div class="launch-section">
+            <h1 class="launch-title">Especialista em Lançamento na Planta</h1>
+            <div class="launch-items">
+                <div class="launch-item" onclick="openZapNoArgs()">
+                    <img src="assets/launch-1.png" class="launch-item-image">
+                    <div class="launch-know-more">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+                <div class="launch-item" onclick="openZapNoArgs()">
+                    <img src="assets/launch-2.png" class="launch-item-image">
+                    <div class="launch-know-more">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+                <div class="launch-item" onclick="openZapNoArgs()">
+                    <img src="assets/launch-3.png" class="launch-item-image">
+                    <div class="launch-know-more"">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+                <div class=" launch-item" onclick="openZapNoArgs()">
+                        <img src="assets/launch-4.png" class="launch-item-image">
+                        <div class="launch-know-more"">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+                <div class=" launch-item" onclick="openZapNoArgs()">
+                            <img src="assets/launch-5.png" class="launch-item-image">
+                            <div class="launch-know-more"">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+                <div class=" launch-item" onclick="openZapNoArgs()">
+                                <img src="assets/launch-6.png" class="launch-item-image">
+                                <div class="launch-know-more"">
+                        <h1>Saiba Mais</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class=" ceo-section">
+                                    <section id="history">
+                                        <div class="ceo-section-info">
+                                            <h1 class="ceo-title">Um pouco sobre nós</h1>
+                                            <h1 class="ceo-text">Nossa CEO e Fundadora, Érica Rocha, tem 20 anos de
+                                                experiência no setor
+                                                imobiliário,
+                                                onde construiu um extenso portfólio de propriedades de alta qualidade,
+                                                passando por grandes
+                                                imobiliárias
+                                                e Construtoras a nível nacional, como a MRV Engenharia, trazendo todo
+                                                seu know-how para
+                                                conquistar
+                                                seu
+                                                lar sem preocupação.</h1>
+                                            <h1 class="ceo-text">Aqui, trabalhamos com uma ampla variedade de imóveis,
+                                                incluindo casas,
+                                                apartamentos,
+                                                terrenos e imóveis
+                                                comerciais, para atender às necessidades e preferências individuais de
+                                                cada cliente.
+                                                Nossa equipe de corretores experientes é especializada em entender suas
+                                                expectativas e
+                                                objetivos.
+                                                Estamos comprometidos em orientá-lo durante todo o processo, desde a
+                                                pesquisa e seleção do
+                                                imóvel
+                                                até a
+                                                conclusão das negociações e além.</h1>
+                                            <h1 class="ceo-text">Valorizamos o relacionamento com nossos clientes e
+                                                buscamos construir parcerias
+                                                duradouras baseadas na
+                                                confiança e na satisfação mútua.
+                                                Além disso, estamos sempre atualizados com as tendências e as mudanças
+                                                no mercado imobiliário,
+                                                para
+                                                oferecer informações relevantes e atualizadas aos nossos clientes.
+                                                Utilizamos tecnologias
+                                                inovadoras
+                                                e
+                                                ferramentas avançadas para garantir eficiência e eficácia em todas as
+                                                etapas do processo
+                                                imobiliário.
+                                            </h1>
+                                            <img class="ceo-logo" src="assets/logo_gold.png"></img>
+                                        </div>
+
+                                    </section>
+
+                                    <section id="feedback"></section>
+
+                                    <h1 class="ceo-title">O que os nossos clientes dizem:</h1>
+                                    <div class="ceo-feedback">
+
+                                        <div class="client-feedback-section">
+                                            <div class="client-feedback-item-long">
+                                                <img src="assets/edna.png" class="item-long-image">
+                                                <div class="column">
+                                                    <h1 class="feedback-item-name-long mg-left-10 mg-bt-10">Edna Souza
+                                                    </h1>
+                                                    <h1 class="feedback-item-text-long">A Érica Rocha Imobiliária me
+                                                        ajudou a realizar um sonho:
+                                                        ter
+                                                        meu
+                                                        apartamento! Parecia ser um sonho muito distante, mas a equipe,
+                                                        com dedicação e atenção
+                                                        tornou
+                                                        tudo possível! Obrigada pelo profissionalismo. Que Deus abençoe
+                                                        vida de vocês sempre e
+                                                        que
+                                                        possam realizar o sonho de muitas pessoas ❤️</h1>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="client-feedback-item">
+                                            <div class="feedback-image"></div>
+                                            <img src="assets/jessica.png" class="item-image">
+                                            <h1 class="feedback-item-name">Jéssica</h1>
+                                            <h1 class="feedback-item-text">A Érica Rocha Imobiliária me ajudou a
+                                                realizar um sonho: ter meu
+                                                apartamento! Parecia ser um sonho muito distante, mas a equipe, com
+                                                dedicação e atenção tornou
+                                                tudo
+                                                possível! Obrigada pelo profissionalismo...</h1>
+                                        </div>
+
+                                    </div>
+    </section>
+
+
+    <h1 class="ceo-text-center">Na Erica Rocha Negócios Imobiliários, acreditamos que cada cliente é único e merece
+        atenção personalizada. Estamos comprometidos em superar suas expectativas, fornecendo um serviço
+        excepcional e garantindo que você encontre a propriedade perfeita para suas necessidades.
+        Entre em contato conosco hoje mesmo e deixe-nos ajudá-lo (a) a conquistar seus sonhos. Estamos ansiosos
+        para trabalhar com você e sermos sua imobiliária de confiança.</h1>
+
+    </div>
+
+    </div>
+    </div>
+    <div class="about-mini">
+        <img class="about-mini-logo" src="assets/logo_black.png"></img>
+    </div>
+    <div class="footer">
+        <a class="peasy" href="https://www.instagram.com/ericarochaimobiliaria/"><img class="instagram-footer-item"
+                src="assets/instagram_logo.svg"></img>
+            <h1 class="footer-instagram-text">ericarochaimobiliaria</h1>
+        </a>
+        <div class="spacer"></div>
+        <a>
+            <a href="https://www.peasysolucoes.com.br" class="peasy" target="_blank">
+                <h1 class="font-light">Uma criação:</h1>
+                <img src="assets/peasy-logo.svg">
+            </a>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
