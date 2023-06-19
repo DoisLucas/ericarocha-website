@@ -11,17 +11,16 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const links = document.querySelectorAll("ul a");
+const links = document.querySelectorAll("nav a");
 
 for (const link of links) {
-    console.log(link);
     link.addEventListener("click", clickHandler);
 }
 
-document.getElementById('tel').addEventListener('keypress', (e) => mascaraTelefone(e.target.value)) // Dispara quando digitado no campo
-document.getElementById('tel').addEventListener('change', (e) => mascaraTelefone(e.target.value)) // Dispara quando autocompletado o campo
+document.getElementById('tel').addEventListener('keypress', (e) => phoneMask(e.target.value)) // Dispara quando digitado no campo
+document.getElementById('tel').addEventListener('change', (e) => phoneMask(e.target.value)) // Dispara quando autocompletado o campo
 
-const mascaraTelefone = (valor) => {
+const phoneMask = (valor) => {
     valor = valor.replace(/\D/g, "")
     valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
     valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")

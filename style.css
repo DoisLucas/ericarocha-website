@@ -137,6 +137,9 @@ table {
     top: 0px;
     display: flex;
     flex-direction: row;
+    background-image: url("assets/square-top.svg");
+    background-repeat: no-repeat;
+    background-size: 8%;
     justify-content: center;
     align-items: center;
     background-color: #4D5A4B;
@@ -267,6 +270,10 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    background-image: url("assets/square-middle.svg");
+    background-repeat: no-repeat;
+    background-size: 8%;
+    background-position-x: right;
     background-color: #4D5A4B;
     padding-left: 20%;
     padding-right: 20%;
@@ -323,6 +330,10 @@ table {
     justify-self: center;
     text-align: center;
     background-color: #30382E;
+    background-image: url("assets/ARCH3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 50px;
@@ -340,6 +351,11 @@ table {
     display: flex;
     flex-direction: column;
     background-color: #4D5A4B;
+    background-image: url("assets/square-bottom-top.svg"), url("assets/square-bottom-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: left, right;
+    background-position-y: top, bottom;
+    background-size: 8%, 8%;
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 50px;
@@ -456,7 +472,7 @@ li {
 
 .client-feedback-item {
     height: 370px;
-    width: 250px;
+    width: 500px;
     min-width: 250px;
     margin: 39p;
     background-color: #30382E;
@@ -482,7 +498,7 @@ li {
 .item-image {
     height: 120px;
     margin-right: 10px;
-    border-radius: 100%;
+    border-radius: 25px;
     position: relative;
     top: -60px;
 }
@@ -525,6 +541,7 @@ li {
     color: #fff;
     font-family: 'Montserrat';
     font-size: 20px;
+    text-align: center;
     font-weight: 700;
     position: relative;
     top: -40px;
@@ -622,16 +639,26 @@ li {
 }
 
 
-
-
-@media (max-width: 850px) {
-
+@media (max-width: 1850px) {
     .ceo-feedback {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
     }
+
+    .client-feedback-item-long {
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 850px) {
+
 
     .client-feedback-item {
         height: 370px;
@@ -656,7 +683,6 @@ li {
     .client-feedback-item-long {
         width: 90%;
         min-width: 250px;
-        margin: 39p;
         margin-top: 20px;
         background-color: #30382E;
         border-top-left-radius: 20px;
@@ -670,6 +696,8 @@ li {
         line-height: 23px;
         margin-right: 10px;
         margin-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .item-long-image {
